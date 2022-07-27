@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF2FA"
+    tools:context=".Bmi_Cal_Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="393dp"
+                android:layout_height="190dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bmi3" />
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:neumorph_shapeType="flat">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="আপনার ওজন ? (KG)"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="0sp"
+                    android:textStyle="bold"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:neumorph_shapeType="basin">
+
+                    <EditText
+                        android:id="@+id/edWight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Weight In KG"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+            </LinearLayout>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:neumorph_shapeType="flat">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="আপনার উচ্চতা ?"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_marginTop="5sp"
+                    android:textStyle="bold"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:neumorph_shapeType="basin">
+
+
+                    <EditText
+                        android:id="@+id/edHight1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Feet"
+                        android:ems="6"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:neumorph_shapeType="basin">
+
+                    <EditText
+                        android:id="@+id/edHight2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Inch"
+                        android:ems="6"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"/>
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:neumorph_shapeType="flat">
+
+                <Button
+                    android:id="@+id/buttonResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:background="#DDF2FA"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Result"
+                    android:textSize="25sp"
+                    android:textColor="#E11212"
+                    android:textStyle="bold" />
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                app:neumorph_shapeType="flat">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDesply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25sp"
+                        android:textColor="#D83A2E"
+                        android:gravity="center"
+                        android:layout_margin="0sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvDesply2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text=""
+                        android:textSize="25sp"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </soup.neumorphism.NeumorphCardView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:background="#C3BABA"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

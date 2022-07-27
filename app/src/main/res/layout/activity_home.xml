@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF2FA"
+    tools:context=".Home_Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:neumorph_shapeType="flat">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                app:iss_delay="0"/>
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="60dp"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:weightSum="3"
+                   android:orientation="horizontal">
+
+
+
+                   <soup.neumorphism.NeumorphCardView
+                       android:layout_weight="1"
+                       android:id="@+id/pregnId"
+                       style="@style/Widget.Neumorph.CardView"
+                       android:layout_width="160dp"
+                       android:layout_height="140dp"
+                       app:neumorph_shapeType="basin"
+                       >
+
+
+                       <ImageView
+                           android:layout_width="90dp"
+                           android:layout_height="80dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/pm"
+
+                           />
+
+
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="bottom"
+                           android:gravity="center"
+                           android:textColor="#000000"
+                           android:textSize="15sp"
+                           android:paddingBottom="5dp"
+                           android:paddingTop="10dp"
+                           android:textStyle="bold"
+                           android:text="গর্ভবতী ক্যালকুলেটর"/>
+
+
+
+                   </soup.neumorphism.NeumorphCardView>
+
+
+                   <soup.neumorphism.NeumorphCardView
+                       android:layout_weight="1"
+                       android:id="@+id/pregn_Care_Id"
+                       style="@style/Widget.Neumorph.CardView"
+                       android:layout_width="160dp"
+                       android:layout_height="140dp"
+                       app:neumorph_shapeType="basin"
+                       >
+
+
+                       <ImageView
+                           android:layout_width="90dp"
+                           android:layout_height="80dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/pregnency1"
+
+                           />
+
+
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="bottom"
+                           android:gravity="center"
+                           android:textColor="#000000"
+                           android:textSize="15sp"
+                           android:paddingBottom="5dp"
+                           android:paddingTop="10dp"
+                           android:textStyle="bold"
+                           android:text="গর্ভবতী মায়ের যত্ন"/>
+
+
+
+                   </soup.neumorphism.NeumorphCardView>
+
+               </LinearLayout>
+
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:weightSum="3"
+                   android:orientation="horizontal">
+
+
+
+                   <soup.neumorphism.NeumorphCardView
+                       android:layout_weight="1"
+                       android:id="@+id/baby_groth_Id"
+                       style="@style/Widget.Neumorph.CardView"
+                       android:layout_width="160dp"
+                       android:layout_height="140dp"
+                       app:neumorph_shapeType="basin"
+                       >
+
+
+                       <ImageView
+                           android:layout_width="90dp"
+                           android:layout_height="80dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/baby_groth"
+
+                           />
+
+
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="bottom"
+                           android:gravity="center"
+                           android:textColor="#000000"
+                           android:textSize="15sp"
+                           android:paddingBottom="5dp"
+                           android:paddingTop="10dp"
+                           android:textStyle="bold"
+                           android:text="শিশুর বৃদ্ধি চার্ট"/>
+
+
+
+                   </soup.neumorphism.NeumorphCardView>
+
+
+                   <soup.neumorphism.NeumorphCardView
+                       android:layout_weight="1"
+                       android:id="@+id/baby_Care_Id"
+                       style="@style/Widget.Neumorph.CardView"
+                       android:layout_width="160dp"
+                       android:layout_height="140dp"
+                       app:neumorph_shapeType="basin"
+                       >
+
+
+                       <ImageView
+                           android:layout_width="90dp"
+                           android:layout_height="80dp"
+                           android:layout_gravity="center"
+                           android:src="@drawable/b1"
+
+                           />
+
+
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="bottom"
+                           android:gravity="center"
+                           android:textColor="#000000"
+                           android:textSize="15sp"
+                           android:paddingBottom="5dp"
+                           android:paddingTop="10dp"
+                           android:textStyle="bold"
+                           android:text="নবজাতকের যত্ন"/>
+
+
+
+                   </soup.neumorphism.NeumorphCardView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:weightSum="3"
+                   android:orientation="horizontal">
+
+
+
+                   <soup.neumorphism.NeumorphCardView
+                       android:id="@+id/ageCalId"
+                       android:layout_weight="1"
+                       style="@style/Widget.Neumorph.CardView"
+                       android:layout_width="160dp"
+                       android:layout_height="140dp"
+                       app:neumorph_shapeType="basin"
+                       >
+
+
+
+                       <ImageView
+                           android:layout_width="90dp"
+                           android:layout_height="80dp"
+                           android:layout_gravity="center"
+                           android:paddingBottom="5dp"
+                           android:src="@drawable/age_calculator"
+
+                           />
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="bottom"
+                           android:gravity="center"
+                           android:textColor="#000000"
+                           android:textSize="15sp"
+                           android:paddingBottom="5dp"
+                           android:paddingTop="5dp"
+                           android:textStyle="bold"
+                           android:text="বয়স ক্যালকুলেটর"/>
+
+
+
+                   </soup.neumorphism.NeumorphCardView>
+
+                   <soup.neumorphism.NeumorphCardView
+                       android:id="@+id/bmiId"
+                       android:layout_weight="1"
+                       style="@style/Widget.Neumorph.CardView"
+                       android:layout_width="160dp"
+                       android:layout_height="140dp"
+                       app:neumorph_shapeType="basin"
+                       >
+
+
+                       <ImageView
+                           android:layout_width="90dp"
+                           android:layout_height="80dp"
+                           android:layout_gravity="center"
+                           android:paddingBottom="5dp"
+                           android:src="@drawable/bmi"
+
+                           />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="bottom"
+                           android:gravity="center"
+                           android:textColor="#000000"
+                           android:textSize="15sp"
+                           android:paddingBottom="5dp"
+                           android:textStyle="bold"
+                           android:text="বিএমআই ক্যালকুলেটর"/>
+
+
+
+                   </soup.neumorphism.NeumorphCardView>
+
+
+
+
+               </LinearLayout>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:gravity="center"
+                   android:textColor="#4CAF50"
+                   android:text="''দুটি সন্তানের বেশি নয়,\n                একটি হলে ভালো হয়''"
+                   />
+
+
+           </LinearLayout>
+
+       </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:background="#C3BABA"
+        ads:adUnitId="ca-app-pub-9590411212206173/1553208836">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

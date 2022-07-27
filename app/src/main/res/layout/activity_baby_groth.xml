@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF2FA"
+    tools:context=".Baby_Groth_Activity">
+
+    <LinearLayout
+        android:id="@+id/li_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Baby Growth Chart"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:textColor="#4CAF50"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/baby_groth_chart"
+            android:scaleType="centerCrop"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+
+        android:layout_below="@+id/li_Top"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <com.ortiz.touchview.TouchImageView
+                android:id="@+id/imageTrintId"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/growthchart"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"/>
+
+            <com.ortiz.touchview.TouchImageView
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/growthchart2"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:background="#C3BABA"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

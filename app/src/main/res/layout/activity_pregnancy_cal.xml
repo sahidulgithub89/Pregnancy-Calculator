@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF2FA"
+    tools:context=".Pregnancy_Cal_Activity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        >
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:neumorph_shapeType="flat">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="ডেলিভারির তারিখ নির্ণয়"
+                android:textColor="#3A426E"
+                android:gravity="center"/>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:neumorph_shapeType="flat">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:text="শেষ মাসিক শুরুর প্রথম দিন"
+                        android:textColor="#3A426E"
+                        android:gravity="center"/>
+
+                </soup.neumorphism.NeumorphCardView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:neumorph_shapeType="basin">
+
+                        <EditText
+                            android:id="@+id/etBirhdayDay"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:clickable="true"
+                            android:hint="DD"
+                            android:textSize="25sp"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:maxLength="2" />
+
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:neumorph_shapeType="basin">
+
+                        <EditText
+                            android:id="@+id/etBirhdayMonth"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:clickable="true"
+                            android:hint="MM"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:inputType="number"
+                            android:gravity="center"
+                            android:maxLength="2" />
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:neumorph_shapeType="basin">
+                        <EditText
+                            android:id="@+id/etBirhdayYear"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:clickable="true"
+                            android:hint="YYYY"
+                            android:textSize="25sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="4" />
+
+
+
+                    </soup.neumorphism.NeumorphCardView>
+
+
+
+                </LinearLayout>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:neumorph_shapeType="flat">
+
+                    <Button
+                        android:id="@+id/buttonCalculate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#DDF2FA"
+                        android:gravity="center"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:text="ক্যালকুলেট"
+                        android:textColor="#E11212"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </soup.neumorphism.NeumorphCardView>
+
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    app:neumorph_shapeType="flat">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="প্রসবের সম্ভাব্য তারিখ"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:textColor="#3A426E"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dateTextViewId"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#F44336"/>
+
+                    </LinearLayout>
+
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    app:neumorph_shapeType="flat">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:text="গর্ভাবস্থার সময়কাল"
+                            android:paddingTop="20dp"
+                            android:textColor="#3A426E"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/periodTextViewId"
+                            android:textSize="25sp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="#4CAF50"/>
+
+                    </LinearLayout>
+
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/visit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    app:neumorph_shapeType="flat">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:text="গর্ভাবস্থায় ন্যূনতম চারবার ডাক্তার দেখাতে হবে \n
+১ম ভিজিট ৪ মাসের মধ্যে\n ২য় ভিজিট ৬-৭ মাসের মধ্যে\n ৩য় ভিজিট ৮ মাসের মধ্যে\n ৪র্থ ভিজিট ৯ মাসের দিকে"
+                            android:paddingTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="#3F51B5"/>
+
+
+                    </LinearLayout>
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:background="#C3BABA"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>
